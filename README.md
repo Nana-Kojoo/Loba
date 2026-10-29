@@ -21,8 +21,9 @@ The site is plain HTML, CSS, and JavaScript. It has no build step and no server 
 assets/
   css/styles.css      All styles, shared by every page
   js/main.js          All scripts, shared by every page
-  img/logo-mark.svg   Logo emblem (header and footer)
-  img/favicon.svg     Simplified emblem for the browser tab
+  img/logo-full.jpg   Full logo with wordmark (original artwork)
+  img/logo-mark.webp  Logo emblem (header and footer)
+  img/favicon.*       Browser tab icon (.ico and 32px .png)
   img/icon-*.png      Home-screen icons (iPhone and Android)
   img/og-image.png    Preview image shown when the site is shared on WhatsApp, Facebook, etc.
 robots.txt            Search engine rules

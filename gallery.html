@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6F0E1A" />
+
+  <title>Student Gallery | Laws of Beauty Academy</title>
+  <meta name="description" content="Explore student work and practical training sessions at Laws of Beauty Academy in Accra, Ghana. View makeup, hair, and beauty therapy work." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.lawsofbeautyacademy.org/gallery.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Laws of Beauty Academy" />
+  <meta property="og:locale" content="en_GH" />
+  <meta property="og:title" content="Student Gallery | Laws of Beauty Academy" />
+  <meta property="og:description" content="Explore student work and practical training sessions at Laws of Beauty Academy in Accra, Ghana. View makeup, hair, and beauty therapy work." />
+  <meta property="og:url" content="https://www.lawsofbeautyacademy.org/gallery.html" />
+  <meta property="og:image" content="https://www.lawsofbeautyacademy.org/assets/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ==========================================================================
+       HEADER
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Laws of Beauty Academy home">
+        <img class="logo-mark" src="assets/img/logo-mark.svg" alt="" width="46" height="46" />
+        <span class="logo-text">
+          Laws of Beauty
+          <small>Academy · Accra</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="courses.html">Courses</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <a href="apply.html" class="btn btn--primary header-cta">Apply for Admission</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About Us</a>
+    <a href="courses.html">Courses</a>
+    <a href="gallery.html" aria-current="page">Gallery</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="apply.html" class="btn btn--primary">Apply for Admission</a>
+  </nav>
+
+  <main id="main">
+    <!-- ==========================================================================
+         PAGE HERO
+         ========================================================================== -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <span class="eyebrow">Student Gallery</span>
+        <h1>Skill, Creativity &amp; <em>Attention to Detail.</em></h1>
+        <p>A curated selection of work created by our students during their training. Each piece reflects the practical skills, artistry, and care developed through our programmes.</p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GALLERY
+         ========================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Filter gallery by category" data-filter-bar="gallery-grid">
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All Work</button>
+          <button type="button" class="filter-btn" data-filter="makeup" aria-pressed="false">Makeup Artistry</button>
+          <button type="button" class="filter-btn" data-filter="hair" aria-pressed="false">Hair Dressing</button>
+          <button type="button" class="filter-btn" data-filter="therapy" aria-pressed="false">Beauty Therapy</button>
+          <button type="button" class="filter-btn" data-filter="environment" aria-pressed="false">Academy Life</button>
+        </div>
+
+        <div class="masonry" id="gallery-grid">
+          <button type="button" class="masonry-item masonry-item--large" data-category="makeup">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1000&auto=format&fit=crop" alt="Student editorial makeup application" loading="lazy" decoding="async" />
+            <span class="masonry-item__overlay">
+              <span class="masonry-item__category">Makeup Artistry</span>
+              <span class="masonry-item__title">Editorial Look</span>
+            </span>
+          </button>
+
+          <button type="button" class="masonry-item masonry-item--tall" data-category="hair">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop" alt="Student bridal hair styling" loading="lazy" decoding="async" />
+            <span class="masonry-item__overlay">
+              <span class="masonry-item__category">Hair Dressing</span>
+              <span class="masonry-item__title">Bridal Styling</span>
+            </span>
+          </button>
+
+          <button type="button" class="masonry-item" data-category="environment">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop" alt="Instructor demonstrating makeup techniques" loading="lazy" decoding="async" />
+            <span class="masonry-item__overlay">
+              <span class="masonry-item__category">Academy Life</span>
+              <span class="masonry-item__title">Instructor Demonstration</span>
+            </span>
+          </button>
+
+          <button type="button" class="masonry-item" data-category="makeup">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop" alt="Student natural glam makeup look" loading="lazy" decoding="async" />
+            <span class="masonry-item__overlay">
+              <span class="masonry-item__category">Makeup Artistry</span>
+              <span class="masonry-item__title">Natural Glam</span>
+            </span>
+          </button>
+
+          <button type="button" class="masonry-item masonry-item--wide" data-category="therapy">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop" alt="Beauty therapy student practising facial treatment" loading="lazy" decoding="async" />
+            <span class="masonry-item__overlay">
+              <span class="masonry-item__category">Beauty Therapy</span>
+              <span class="masonry-item__title">Skincare &amp; Facial Routine</span>
+            </span>
+          </button>
+
+          <button type="button" class="masonry-item masonry-item--tall" data-category="environment">
+            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=800&auto=format&fit=crop" alt="Student practising makeup on a model" loading="lazy" decoding="async" />
+            <span class="masonry-item__overlay">
+              <span class="masonry-item__category">Academy Life</span>
+              <span class="masonry-item__title">Hands-on Practice</span>
+            </span>
+          </button>
+
+          <button type="button" class="masonry-item" data-category="hair">
+            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=800&auto=format&fit=crop" alt="Finished student styling work" loading="lazy" decoding="async" />
+            <span class="masonry-item__overlay">
+              <span class="masonry-item__category">Hair Dressing</span>
+              <span class="masonry-item__title">Finished Styling</span>
+            </span>
+          </button>
+
+          <button type="button" class="masonry-item" data-category="environment">
+            <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=800&auto=format&fit=crop" alt="Professional beauty tools used in training" loading="lazy" decoding="async" />
+            <span class="masonry-item__overlay">
+              <span class="masonry-item__category">Academy Life</span>
+              <span class="masonry-item__title">Professional Tools</span>
+            </span>
+          </button>
+
+          <button type="button" class="masonry-item" data-category="makeup">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=800&auto=format&fit=crop" alt="Makeup student work with products" loading="lazy" decoding="async" />
+            <span class="masonry-item__overlay">
+              <span class="masonry-item__category">Makeup Artistry</span>
+              <span class="masonry-item__title">Creative Application</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CTA
+         ========================================================================== -->
+    <section class="section section--maroon cta-band">
+      <div class="container">
+        <span class="eyebrow">Admissions Open</span>
+        <h2>Ready to Create Work Like This?</h2>
+        <p>Join our hands-on programmes and build the practical skills to start your beauty career.</p>
+        <div class="btn-group">
+          <a href="index.html#courses" class="btn btn--gold">Explore Our Courses</a>
+          <a href="apply.html" class="btn btn--outline-light">Apply for Admission</a>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================================================
+         LOCATION
+         ========================================================================== -->
+    <section class="section" id="location">
+      <div class="container">
+        <div class="location-header">
+          <span class="eyebrow">Visit Us</span>
+          <h2>Find the Academy.</h2>
+          <p>Come and see our training studio, meet the team, and ask your questions in person.</p>
+        </div>
+
+        <div class="location-card">
+          <div class="location-details">
+            <h3>Laws of Beauty Academy</h3>
+            <p>Professional beauty training in Santa Maria, Accra.</p>
+
+            <ul class="location-list">
+              <li>
+                <span class="location-list__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div>
+                  <strong>Address</strong>
+                  <a href="https://www.google.com/maps?cid=10413602134288226385" target="_blank" rel="noopener">Santa Maria, A-Lang Rd, Accra, Ghana</a>
+                </div>
+              </li>
+              <li>
+                <span class="location-list__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+233244545945">024 454 5945</a> / <a href="tel:+233200624244">020 062 4244</a>
+                </div>
+              </li>
+              <li>
+                <span class="location-list__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                </span>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <a href="https://wa.me/233244545945" target="_blank" rel="noopener">Message us on WhatsApp</a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="location-actions">
+              <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Laws+of+Beauty+Academy,+A-Lang+Rd,+Accra" class="btn btn--gold" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                Get Directions
+              </a>
+              <a href="tel:+233244545945" class="btn btn--outline-light">Call Us</a>
+            </div>
+          </div>
+
+          <div class="location-map">
+            <iframe
+              id="location-map"
+              src="https://www.google.com/maps?q=Laws+of+Beauty+Academy,+A-Lang+Rd,+Accra&amp;ll=5.5975005,-0.2749825&amp;z=17&amp;output=embed"
+              title="Map showing Laws of Beauty Academy, A-Lang Rd, Santa Maria, Accra"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+
+            <div class="locator">
+              <button type="button" class="locate-btn" id="locate-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M2 12h3"/><path d="M19 12h3"/><circle cx="12" cy="12" r="7"/></svg>
+                <span id="locate-label">Show route from my location</span>
+              </button>
+              <p class="locate-status" id="locate-status" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Laws of Beauty Academy home">
+            <img class="logo-mark" src="assets/img/logo-mark.svg" alt="" width="46" height="46" />
+            <span class="logo-text">
+              Laws of Beauty
+              <small>Academy · Accra</small>
+            </span>
+          </a>
+          <p>Professional training in beauty, hair, and fashion in Accra, Ghana. Practical skills, supportive learning, and guidance for your career.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/233244545945" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </a>
+            <!-- TODO: replace with the academy's Facebook page URL -->
+            <a href="https://www.facebook.com/search/top?q=Laws%20of%20Beauty%20Academy" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="apply.html">Apply for Admission</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="courses.html#cosmetology">Cosmetology</a></li>
+            <li><a href="courses.html#hair-dressing">Hair Dressing</a></li>
+            <li><a href="courses.html#beauty-therapy">Beauty Therapy</a></li>
+            <li><a href="courses.html#fashion-design">Fashion Design</a></li>
+            <li><a href="courses.html#barbering">Barbering</a></li>
+            <li><a href="courses.html#beading">Beading</a></li>
+            <li><a href="courses.html#modeling">Modeling</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+233244545945">024 454 5945</a></li>
+            <li><a href="tel:+233200624244">020 062 4244</a></li>
+            <li><a href="https://wa.me/233244545945" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://www.google.com/maps?cid=10413602134288226385" target="_blank" rel="noopener">Santa Maria, A-Lang Rd, Accra</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Laws of Beauty Academy. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/233244545945" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close image preview">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+    </button>
+    <img alt="" id="lightbox-img" />
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

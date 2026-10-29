@@ -26,6 +26,7 @@ assets/
   img/favicon.*       Browser tab icon (.ico and 32px .png)
   img/icon-*.png      Home-screen icons (iPhone and Android)
   img/og-image.png    Preview image shown when the site is shared on WhatsApp, Facebook, etc.
+  img/studio/         Photos of the academy studio (gallery, about, and course cards)
 robots.txt            Search engine rules
 sitemap.xml           Page list for search engines
 site.webmanifest      App name and icons for phones

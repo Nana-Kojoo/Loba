@@ -101,6 +101,11 @@ document.querySelectorAll('[data-filter-bar]').forEach((bar) => {
       });
     });
   });
+
+  // Links like courses.html?filter=fashion open with that filter applied
+  const requested = new URLSearchParams(window.location.search).get('filter');
+  const preset = [...buttons].find((b) => b.dataset.filter === requested);
+  if (preset) preset.click();
 });
 
 /* --------------------------------------------------------------------------

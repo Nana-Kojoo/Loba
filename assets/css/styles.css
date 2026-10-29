@@ -557,6 +557,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 30%;
   transition: transform 1s var(--transition-smooth);
 }
 
@@ -576,6 +577,81 @@ p {
   font-weight: 500;
   letter-spacing: 0.05em;
   pointer-events: none;
+}
+
+/* Fashion spotlight (homepage) */
+.fashion-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 5rem);
+  align-items: center;
+}
+
+.fashion-media {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  aspect-ratio: 1 / 1;
+}
+
+.fashion-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+}
+
+.fashion-media img:first-child {
+  grid-row: span 2;
+}
+
+.fashion-content h2 {
+  margin-bottom: 1.25rem;
+}
+
+.fashion-pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.fashion-pillar {
+  padding-left: 1rem;
+  border-left: 2px solid var(--color-marigold);
+}
+
+.fashion-pillar h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.fashion-pillar p {
+  font-size: 0.9rem;
+}
+
+.fashion-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.fashion-courses a {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--color-crimson);
+  border-radius: 999px;
+  color: var(--color-crimson);
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.fashion-courses a:hover {
+  background-color: var(--color-crimson);
+  color: var(--color-white);
 }
 
 /* ==========================================================================
@@ -1550,6 +1626,7 @@ textarea.form-control {
   .hero-media { order: 1; max-height: 400px; aspect-ratio: 16 / 9; }
 
   .about-grid { grid-template-columns: 1fr; }
+  .fashion-grid { grid-template-columns: 1fr; }
   .about-media { order: 2; }
   .about-media::after { inset: 1rem -1rem -1rem 1rem; }
 
@@ -1584,6 +1661,7 @@ textarea.form-control {
 
   .gallery-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr; }
+  .fashion-pillars { grid-template-columns: 1fr; }
 
   .contact-item { flex-direction: column; }
   .contact-item svg { margin-top: 0; }

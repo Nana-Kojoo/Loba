@@ -80,7 +80,8 @@ faqButtons.forEach((btn, i) => {
 /* --------------------------------------------------------------------------
    Category filters (courses page and gallery)
    <div data-filter-bar="target-id"> with .filter-btn[data-filter] buttons;
-   the target's children carry data-category.
+   the target's children carry data-category, which may list several
+   space-separated categories (data-category="beauty hair").
    -------------------------------------------------------------------------- */
 document.querySelectorAll('[data-filter-bar]').forEach((bar) => {
   const target = document.getElementById(bar.dataset.filterBar);
@@ -97,7 +98,7 @@ document.querySelectorAll('[data-filter-bar]').forEach((bar) => {
 
       const filter = btn.dataset.filter;
       items.forEach((item) => {
-        item.hidden = filter !== 'all' && item.dataset.category !== filter;
+        item.hidden = filter !== 'all' && !item.dataset.category.split(' ').includes(filter);
       });
     });
   });

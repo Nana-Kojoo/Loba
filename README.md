@@ -9,7 +9,7 @@ The site is plain HTML, CSS, and JavaScript. It has no build step and no server 
 | File | Page |
 |---|---|
 | `index.html` | Homepage: hero, about, courses, admissions, gallery preview, testimonials, FAQ, contact, map |
-| `courses.html` | All seven courses with durations, schedules, and Beauty / Hair / Fashion filters |
+| `courses.html` | All courses with durations, full course outlines, admissions facts, and Fashion / Beauty / Hair filters |
 | `gallery.html` | Student work with category filters and a full-screen image viewer |
 | `apply.html` | Admission steps, application form, admission FAQs, map |
 | `privacy.html`, `terms.html` | Privacy Policy and Terms & Conditions |
@@ -26,7 +26,8 @@ assets/
   img/favicon.*       Browser tab icon (.ico and 32px .png)
   img/icon-*.png      Home-screen icons (iPhone and Android)
   img/og-image.png    Preview image shown when the site is shared on WhatsApp, Facebook, etc.
-  img/studio/         Photos of the academy studio (gallery, about, and course cards)
+  img/studio/         Photos of the academy studio (gallery and course cards)
+  img/graduation/     Graduation ceremony and academy front photos (hero, about, gallery)
 robots.txt            Search engine rules
 sitemap.xml           Page list for search engines
 site.webmanifest      App name and icons for phones
@@ -47,7 +48,7 @@ Every page loads the same `styles.css` and `main.js`, so a style change applies 
 | To change | Where |
 |---|---|
 | A course (name, description, duration, schedule, photo) | Course cards in `index.html` and `courses.html`. The course name also appears in the course dropdown in `index.html` and `apply.html`, and in the footer of every page. |
-| Add or remove a course | Same places as above. On `courses.html`, set the card's `data-category` to `beauty`, `hair`, or `fashion` so the filters work. |
+| Add or remove a course | Same places as above. On `courses.html`, set the card's `data-category` to `beauty`, `hair`, or `fashion` so the filters work. A course in two areas lists both, separated by a space (`data-category="beauty hair"`). |
 | Phone numbers | Contact section and footer of every page, the location section, and `WHATSAPP_NUMBER` in `assets/js/main.js` |
 | Map location | `ACADEMY` in `assets/js/main.js` and the map `<iframe>` in each page's location section |
 | Colours and fonts | Variables at the top of `assets/css/styles.css` |
@@ -66,9 +67,9 @@ Upload the whole folder to any static host, such as Netlify, Vercel, GitHub Page
 The following content was written for the demo or came from earlier drafts. Please check it with the academy:
 
 - [ ] **Stats on the homepage.** "2,000+ students trained", "15+ years of experience", and "1:1 mentor support". The 4.8★ rating comes from the academy's Google listing.
-- [ ] **Course durations and schedules.** For example, Cosmetology is listed as 12 weeks, weekday and weekend. Modeling is shown as "Duration on request".
-- [ ] **Course descriptions**, especially Fashion Design, Barbering, Beading, and Modeling.
+- [ ] **Course outlines.** Courses, durations, and topics come from the academy's tuition fees sheet (October 2026); prices are deliberately left off the site. Two topics were reworded from the sheet: "Bursty" is shown as "Bustier" and "Dripping" as "Draping" (Fashion Design). The two 10-month Cosmetology options are shown as one course with "Waxing (optional)".
+- [ ] **Barbering description.** The sheet gives only the duration (3 months); the topics in the description are from the earlier draft.
 - [ ] **Testimonials** (Abena M., Efua K.). Use real, permitted quotes.
 - [ ] **Facebook link.** It currently runs a Facebook search. Replace it with the page URL in the footer of every page (marked `TODO`).
-- [ ] **Photos.** All photos are Unsplash stock images. Replace them with the academy's own photos where possible.
+- [ ] **Photos.** Graduation and studio photos are the academy's own. The fashion spotlight, some fashion gallery items, and the Barbering card still use Unsplash stock images. Replace them with the academy's own photos where possible.
 - [ ] **Privacy Policy and Terms.** Have both reviewed before going live.

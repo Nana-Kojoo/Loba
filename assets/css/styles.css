@@ -1847,6 +1847,82 @@ textarea.form-control {
   margin: 2.5rem auto 0;
 }
 
+/* Course outline: the topics listed on each catalog card */
+.course-grid--catalog .course-card__body p {
+  flex: none;
+}
+
+.course-modules__title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-charcoal);
+  margin-bottom: 0.75rem;
+}
+
+.course-modules {
+  flex: 1;
+  align-content: start;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.4rem 1rem;
+  margin: 0 0 1.75rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.course-modules li {
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.course-modules li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-crimson);
+}
+
+/* Admissions facts below the course catalogue */
+.course-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 3rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-facts li {
+  padding: 1.25rem 1.5rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border-light);
+  border-top: 3px solid var(--color-crimson);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.course-facts strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--color-charcoal);
+}
+
+@media (max-width: 900px) {
+  .course-facts { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .course-facts { grid-template-columns: 1fr; }
+}
+
 /* ==========================================================================
    25. GALLERY PAGE
    ========================================================================== */

@@ -1623,7 +1623,8 @@ textarea.form-control {
   .hero-content { order: 2; text-align: center; margin: 0 auto; }
   .hero-content p { margin-left: auto; margin-right: auto; }
   .hero-content .btn-group { justify-content: center; }
-  .hero-media { order: 1; max-height: 400px; aspect-ratio: 16 / 9; }
+  .hero-media { order: 1; width: 100%; max-width: 380px; margin-inline: auto; aspect-ratio: 4 / 5; }
+  .hero-media img { object-position: center 20%; }
 
   .about-grid { grid-template-columns: 1fr; }
   .fashion-grid { grid-template-columns: 1fr; }
